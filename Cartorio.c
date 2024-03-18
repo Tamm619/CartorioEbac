@@ -150,7 +150,8 @@ int main()
 	    printf("Escolha a opção desejada do menu:\n\n"); 
 	    printf("\t1 - Registrar Nomes\n");
 	    printf("\t2 - Consultar Nomes\n");  
-	    printf("\t3 - Deletar Nomes\n\n\n");
+	    printf("\t3 - Deletar Nomes\n");
+	    printf("\t4 - Sair do Sistema\n\n\n");
 	    printf("Opção:"); //Final do Menu //printf("Este Software é de livre uso de todos."); No Final!!!!
 	    
 	    scanf("%d", &opcao); //Gravando as Informações do Usuário
@@ -169,6 +170,11 @@ int main()
     		
     		case 3:
     		deletar();
+    		break;
+    		
+    		case 4:
+    		printf("Obrigado por acessar o Sistema!\n");
+    		return 0;
     		break;
     		
     		default:
